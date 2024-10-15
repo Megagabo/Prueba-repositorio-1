@@ -1,0 +1,115 @@
+:root{
+    --backgroundColor: yellow;
+    --fuentePrincipal: "Roboto Condensed", sans-serif;
+    --fuenteSecundaria: "Afacad Flux", sans-serif;
+    --colorSubtitulos: #8c2828;
+    --gris: #e1e1e1; 
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   /* 1 rem = 10 px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+@media (min-width: 768px) {
+    body {
+        background-color: blanchedalmond;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 5rem;
+    font-family: var(--fuentePrincipal);
+}
+h2 {
+    font-size: 3.6rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSubtitulos);
+}
+h3 {
+    font-size: 2.5rem;
+    color: #b55fd6;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSubtitulos);
+}
+p {
+    font-size: 1.4rem;
+    font-family: var(--fuenteSecundaria);
+}
+header {
+    background-image: url(../assets/images/image-omelette.jpeg);
+    
+}
+img{
+    max-width: 100%;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    img{
+        max-width: 100%;
+        margin-top: 3.5rem;
+        border-radius: 20px;
+    }
+}
+
+ul {
+    font-size: 1.4rem;
+    font-family: var(--fuenteSecundaria);
+}
+li{
+    font-size: 1.4rem;
+    font-family: var(--fuenteSecundaria);
+}
+.no-margin{
+    margin: 0;
+}
+.no-border {
+    border: 0;
+}
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 120rem;
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 1rem 5rem;
+        border-radius: 20px;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
+
+.tiempoPreparacion {
+    background-color: #f5ebfc;
+    border-radius: 20px;
+}
+.tituloTiempo{
+    padding: 3rem 1rem 0 3rem;
+}
+.listaTiempo{
+    padding-bottom: 3rem;
+}
+.ingredientes{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--gris);
+
+}
+.nutricionFlex{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* row-gap: 1.8rem; */
+    padding-bottom: 2.2rem;
+    
+}
+.infoRojo{
+    color: var(--colorSubtitulos);
+}
+.borderBlack{
+    border-bottom: 1px solid var(--gris);
+    padding-bottom: 1.8rem;
+}
